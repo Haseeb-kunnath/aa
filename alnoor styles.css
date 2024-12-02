@@ -1,0 +1,174 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e6f0ff, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative; /* Added to make sure the bush effect is positioned correctly */
+}
+
+/* Bush Effect */
+.bush {
+    position: absolute;
+    top: -30px; /* Positioned above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 120px;
+    background: radial-gradient(circle, #34d399 20%, #064e3b 80%);
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: -1; /* Behind other content */
+}
+
+/* Additional bush effects (Layering multiple bushes) */
+.bush::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 150px;
+    height: 100px;
+    background: radial-gradient(circle, #34d399 20%, #064e3b 80%);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bush::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 180px;
+    height: 120px;
+    background: radial-gradient(circle, #34d399 20%, #064e3b 80%);
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headers */
+h1 {
+    color: #2f855a;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2f855;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #2f855a;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input[type="date"], input[type="number"], input[type="text"], button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #38a169;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #2f855a;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #38a169;
+    color: white;
+}
+
+td {
+    font-size: 1rem;
+}
+
+td button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+td button:hover {
+    background-color: #d32f2f;
+}
+
+/* Total Balance */
+h3 {
+    font-size: 1.3rem;
+    color: #2f855a;
+    font-weight: bold;
+}
+
+/* About Us Section */
+.about-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.about-section h2 {
+    color: #38a169;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-section strong {
+    color: #2f855a;
+}
