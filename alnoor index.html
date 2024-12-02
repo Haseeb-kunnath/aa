@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Al Aweer Cash Book App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bush Effect -->
+        <div class="bush"></div>
+
+        <h1>Al Noor Tower Lakkidi</h1>
+        <h2>Rent Payment Book</h2>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="date" id="transactionDate" required>
+            <input type="number" id="creditAmount" placeholder="Income (Credit)" min="0">
+            <input type="number" id="debitAmount" placeholder="Expense (Debit)" min="0">
+            <input type="text" id="description" placeholder="Description" required>
+            <button id="addTransactionBtn">Add Transaction</button>
+        </div>
+
+        <!-- Transaction Table -->
+        <h2>Transaction History</h2>
+        <table id="transactionTable">
+            <tr>
+                <th>Date</th>
+                <th>Credit</th>
+                <th>Debit</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+
+        <!-- Total Balance -->
+        <h3>Total Balance: <span id="totalBalance">0.00</span></h3>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>The Al Noor Tower team is a premier rental business service provider located in Kerala, India. In addition to our current operations, we have ambitious future plans to expand and diversify our business offerings. The Owner of Al Noor Tower is Mr. Jabbar Amayour. Our rental buildings are located in Lakkidi-Palakkad and Pulamanthol (Up)-Malappuram.</p>
+        <p>If you are in the process of starting a business and are seeking the ideal location, we are here to assist you. We are committed to helping you find the perfect spot for your venture.</p>
+        <p>For inquiries or more information, please contact:</p>
+        <p><strong>Jilshad</strong></p>
+        <p>Phone: <strong>9061435581</strong></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
